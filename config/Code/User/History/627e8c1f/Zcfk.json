@@ -1,0 +1,8 @@
+{
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.colorTheme": "Tokyo-Night",
+    "window.menuBarVisibility": "toggle",
+    "git.autofetch": true
+}

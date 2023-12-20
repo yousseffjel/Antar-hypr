@@ -1,0 +1,26 @@
+2023-12-20 14:04:16.633 [warning] /home/yusuf/.ssh/config: ENOENT: no such file or directory, open '/home/yusuf/.ssh/config'
+2023-12-20 14:04:16.633 [info] Activation> Extension version: 0.78.1
+2023-12-20 14:04:16.633 [info] TemporaryState> Error in initialization: Unable to delete nonexistent file 'vscode-userdata:/home/yusuf/.config/Code/User/globalStorage/github.vscode-pull-request-github/temp'
+2023-12-20 14:04:16.667 [info] Looking for git repository
+2023-12-20 14:04:16.667 [info] Found 0 repositories during activation
+2023-12-20 14:04:16.667 [info] Git repository found, initializing review manager and pr tree view.
+2023-12-20 14:04:16.676 [info] Registering git provider
+2023-12-20 14:04:16.676 [info] Review+0> Validate state in progress
+2023-12-20 14:04:16.676 [info] Review+0> Validating state...
+2023-12-20 14:04:16.698 [info] Found GitHub remote for folder /home/yusuf/Antar-hypr
+2023-12-20 14:04:16.700 [info] Trying to use globalState for assignableUsers.
+2023-12-20 14:04:16.728 [info] Review+0> No matching pull request metadata found locally for current branch main
+2023-12-20 14:04:16.729 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2023-12-20 14:04:16.736 [info] GlobalState does not exist for assignableUsers.
+2023-12-20 14:04:52.124 [info] Found GitHub remote for folder /home/yusuf/Antar-hypr
+2023-12-20 14:04:52.212 [info] Review+0> Validate state in progress
+2023-12-20 14:04:52.212 [info] Review+0> Validating state...
+2023-12-20 14:04:54.033 [info] Trying to use globalState for assignableUsers.
+2023-12-20 14:04:54.034 [info] GlobalState does not exist for assignableUsers.
+2023-12-20 14:04:54.061 [info] Found GitHub remote for folder /home/yusuf/Antar-hypr
+2023-12-20 14:04:54.064 [info] Trying to use globalState for assignableUsers.
+2023-12-20 14:04:54.153 [info] Review+0> No matching pull request metadata found locally for current branch main
+2023-12-20 14:04:54.180 [info] GlobalState does not exist for assignableUsers.
+2023-12-20 14:04:55.827 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2023-12-20 14:07:08.906 [info] Repo state for file:///home/yusuf/Antar-hypr changed.
+2023-12-20 14:07:08.907 [info] Repo file:///home/yusuf/Antar-hypr has already been setup.

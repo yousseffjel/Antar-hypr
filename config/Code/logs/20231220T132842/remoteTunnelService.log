@@ -1,0 +1,7 @@
+2023-12-20 13:28:47.230 [error] thread 'main' panicked at src/bin/code/main.rs:39:90:
+
+2023-12-20 13:28:47.231 [error] called `Result::unwrap()` on an `Err` value: WrappedError(WrappedError { message: "error creating directory /home/yusuf/.vscode/cli", original: "Permission denied (os error 13)" })
+
+2023-12-20 13:28:47.231 [error] note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+2023-12-20 13:28:47.234 [error] Could not parse status output: "Running tunnel CLI\nstatus Spawning: /opt/visual-studio-code/bin/code-tunnel tunnel status\nstatus exit(20393): + 101"

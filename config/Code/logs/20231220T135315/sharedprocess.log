@@ -1,0 +1,57 @@
+2023-12-20 14:02:29.154 [info] Getting Manifest... ms-toolsai.jupyter-keymap
+2023-12-20 14:02:29.155 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2023-12-20 14:02:29.155 [info] Getting Manifest... ms-toolsai.vscode-jupyter-slideshow
+2023-12-20 14:02:29.156 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2023-12-20 14:02:29.156 [info] Getting Manifest... ms-python.python
+2023-12-20 14:02:29.156 [info] Getting Manifest... ms-python.vscode-pylance
+2023-12-20 14:02:29.158 [info] Getting Manifest... ms-toolsai.jupyter
+2023-12-20 14:02:29.301 [info] Installing extension: ms-toolsai.jupyter-keymap
+2023-12-20 14:02:29.302 [info] Installing the extension without checking dependencies and pack ms-toolsai.jupyter-keymap
+2023-12-20 14:02:29.302 [info] Installing extension: ms-toolsai.vscode-jupyter-cell-tags
+2023-12-20 14:02:29.305 [info] Installing the extension without checking dependencies and pack ms-toolsai.vscode-jupyter-cell-tags
+2023-12-20 14:02:29.306 [info] Installing extension: ms-toolsai.vscode-jupyter-slideshow
+2023-12-20 14:02:29.307 [info] Installing the extension without checking dependencies and pack ms-toolsai.vscode-jupyter-slideshow
+2023-12-20 14:02:29.309 [info] Installing extension: ms-toolsai.jupyter-renderers
+2023-12-20 14:02:29.310 [info] Installing the extension without checking dependencies and pack ms-toolsai.jupyter-renderers
+2023-12-20 14:02:29.312 [info] Installing extension: ms-python.python
+2023-12-20 14:02:29.315 [info] Installing the extension without checking dependencies and pack ms-python.python
+2023-12-20 14:02:29.315 [info] Installing extension: ms-toolsai.jupyter
+2023-12-20 14:02:29.316 [info] Installing the extension without checking dependencies and pack ms-toolsai.jupyter
+2023-12-20 14:02:29.316 [info] Installing extension: ms-python.vscode-pylance
+2023-12-20 14:02:29.316 [info] Installing the extension without checking dependencies and pack ms-python.vscode-pylance
+2023-12-20 14:02:30.766 [warning] Extension signature verification failed with error 'UnknownError': ms-toolsai.jupyter-keymap
+2023-12-20 14:02:30.806 [info] Extracted extension to file:///home/yusuf/.vscode/extensions/ms-toolsai.jupyter-keymap-1.1.2: ms-toolsai.jupyter-keymap
+2023-12-20 14:02:30.817 [info] Renamed to /home/yusuf/.vscode/extensions/ms-toolsai.jupyter-keymap-1.1.2
+2023-12-20 14:02:30.819 [info] Extracting extension completed. ms-toolsai.jupyter-keymap
+2023-12-20 14:02:30.839 [info] Extension installed successfully: ms-toolsai.jupyter-keymap
+2023-12-20 14:02:30.919 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/yusuf/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/yusuf/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)
+2023-12-20 14:02:31.095 [warning] Extension signature verification failed with error 'UnknownError': ms-toolsai.vscode-jupyter-cell-tags
+2023-12-20 14:02:31.158 [info] Extracted extension to file:///home/yusuf/.vscode/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.8: ms-toolsai.vscode-jupyter-cell-tags
+2023-12-20 14:02:31.164 [info] Renamed to /home/yusuf/.vscode/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.8
+2023-12-20 14:02:31.169 [info] Extracting extension completed. ms-toolsai.vscode-jupyter-cell-tags
+2023-12-20 14:02:31.186 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-cell-tags
+2023-12-20 14:02:31.261 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/yusuf/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/yusuf/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)
+2023-12-20 14:02:31.783 [warning] Extension signature verification failed with error 'UnknownError': ms-toolsai.vscode-jupyter-slideshow
+2023-12-20 14:02:31.833 [info] Extracted extension to file:///home/yusuf/.vscode/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.5: ms-toolsai.vscode-jupyter-slideshow
+2023-12-20 14:02:31.837 [info] Renamed to /home/yusuf/.vscode/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.5
+2023-12-20 14:02:31.840 [info] Extracting extension completed. ms-toolsai.vscode-jupyter-slideshow
+2023-12-20 14:02:31.857 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-slideshow
+2023-12-20 14:02:31.928 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/yusuf/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/yusuf/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)

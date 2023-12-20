@@ -70,14 +70,14 @@ if [[ $inst =~ ^[Nn]$ ]]; then
 if [[ $inst =~ ^[Yy]$ ]]; then
    git_pkgs="grimblast-git hyprpicker-git waybar-hyprland-git"
    hypr_pkgs="hyprland wl-clipboard wf-recorder rofi-lbonn-wayland-git wlogout swaylock-effects dunst swaybg kitty thunar thunar-archive-plugin tmux zsync unzip tar sudo sed grep wget curl nodejs"
-   hypr_pkgs2="wlsunset xdg-desktop-portal-hyprland slurp swappy cliphist swayidle xorg-xwayland xorg-xhost xdg-desktop-portal-gtk npm cargo tree lazygit binutils"
+   hypr_pkgs2="wlsunset floorp xdg-desktop-portal-hyprland slurp swappy cliphist swayidle xorg-xwayland xorg-xhost xdg-desktop-portal-gtk npm cargo tree lazygit binutils"
    font_pkgs="ttf-nerd-fonts-symbols-common otf-firamono-nerd inter-font otf-sora ttf-fantasque-nerd noto-fonts noto-fonts-emoji ttf-comfortaa ttf-font-awesome"
    font_pkgs2="ttf-jetbrains-mono-nerd ttf-icomoon-feather ttf-iosevka-nerd adobe-source-code-pro-fonts awesome-terminal-fonts ttf-joypixels ttf-opensans "
    app_pkgs="nwg-look-bin qt5ct qt6ct qt5-wayland qt6-wayland htop jq gvfs ffmpegthumbs mpv playerctl pamixer opendoas rhythmbox qbittorrent bat freedownloadmanager figlet"
    app_pkgs2="polkit-kde-agent ffmpeg neovim viewnior pavucontrol ffmpegthumbnailer tumbler xdg-user-dirs spicetify-cli trash-cli timeshift grub-btrfs coreutils fuse python-pip trizen"
    app_pkgs3="emote syncthing unrar auto-cpufreq tlp network-manager-applet pacman-contrib python-pyamdgpuinfo parallel gparted brightnessctl kvantum neofetch visual-studio-code-bin vim spotify"
 
-    yay -R --noconfirm swaylock waybar
+#    yay -R --noconfirm swaylock waybar
 
     if ! yay -S --noconfirm $git_pkgs $hypr_pkgs $hypr_pkgs2 $font_pkgs $font_pkgs2 $app_pkgs $app_pkgs2 $app_pkgs3 2>&1 | tee -a $LOG; then
         print_error " Failed to install additional packages - please check the install.log \n"
@@ -98,9 +98,9 @@ fi
 read -n1 -rep "${CAT} Would you like to copy config files? (y,n)" CFG
 if [[ $CFG =~ ^[Yy]$ ]]; then
     printf " Make backup to old config....\n"
-    mv $HOME/.config $/HOME/cfg-bak
+#    mv $HOME/.config $/HOME/cfg-bak
     printf " Copying config files...\n"
-    sudo mkdir -p $HOME/.config
+#    sudo mkdir -p $HOME/.config
     ln -sf config/Code ~/.config/ 2>&1 | tee -a $LOG
     ln -sf config/dunst ~/.config/ 2>&1 | tee -a $LOG
     ln -sf config/gtk-3.0 ~/.config/ 2>&1 | tee -a $LOG
@@ -157,8 +157,8 @@ if [[ ! -d $HOME/.themes ]]; then
     sudo mkdir -p $HOME/.themes
 fi
 
-sudo cp -R source/icons/* /usr/share/themes
-sudo cp -R source/icons/* $HOME/.themes
+sudo cp -R source/themes/* /usr/share/themes
+sudo cp -R source/themesw/* $HOME/.themes
 
 ### for vscode ###
 if [[ ! -d $HOME/.vscode ]]; then

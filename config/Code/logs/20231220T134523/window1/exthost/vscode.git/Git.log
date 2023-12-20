@@ -1,0 +1,18 @@
+2023-12-20 13:45:26.779 [info] Log level: Info
+2023-12-20 13:45:26.779 [info] Validating found git in: "git"
+2023-12-20 13:45:26.779 [info] Using git "2.43.0" from "git"
+2023-12-20 13:45:26.779 [info] > git rev-parse --show-toplevel [14ms]
+2023-12-20 13:45:26.876 [info] > git rev-parse --git-dir --git-common-dir [18ms]
+2023-12-20 13:45:26.925 [info] Open repository: /home/yusuf/Antar-hypr
+2023-12-20 13:45:26.966 [info] > git rev-parse --show-toplevel [5ms]
+2023-12-20 13:45:26.968 [info] > git config --get commit.template [18ms]
+2023-12-20 13:45:26.997 [info] > git rev-parse --show-toplevel [18ms]
+2023-12-20 13:45:27.007 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [17ms]
+2023-12-20 13:45:27.022 [warning] ENOENT: no such file or directory, open '/home/yusuf/Antar-hypr/.git/refs/remotes/origin/main'
+2023-12-20 13:45:27.025 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2023-12-20 13:45:27.036 [info] > git rev-parse --show-toplevel [31ms]
+2023-12-20 13:45:27.565 [info] > git check-ignore -v -z --stdin [5ms]
+2023-12-20 13:45:28.429 [info] > git status -z -uall [1395ms] (cancelled)
+2023-12-20 13:45:29.619 [info] > git show --textconv :install.sh [26ms]
+2023-12-20 13:45:29.626 [info] > git ls-files --stage -- /home/yusuf/Antar-hypr/install.sh [8ms]
+2023-12-20 13:45:29.668 [info] > git cat-file -s 7b5401b469ee9e58b2f417cbc1be393b6b6548a4 [23ms]
