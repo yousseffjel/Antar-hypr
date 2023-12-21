@@ -1,7 +1,0 @@
-2023-12-20 14:02:35.027 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'registerIssueDataProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
-2023-12-20 14:02:36.094 [info] Started local extension host with pid 22922.
-2023-12-20 14:02:41.065 [info] [perf] Render performance baseline is 107ms
-2023-12-20 14:02:43.665 [warning] [ms-toolsai.vscode-jupyter-cell-tags]: View container 'jupyter-variables' does not exist and all views registered to it will be added to 'Explorer'.
-2023-12-20 14:04:52.002 [info] Settings Sync: Updating due to change in sessions
-2023-12-20 14:09:14.286 [info] Extension host (LocalProcess pid: 22922) is unresponsive.
-2023-12-20 14:09:16.390 [info] Extension host (LocalProcess pid: 22922) is responsive.

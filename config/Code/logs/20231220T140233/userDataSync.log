@@ -1,8 +1,0 @@
-2023-12-20 14:02:36.591 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
-2023-12-20 14:02:36.591 [info] Auto Sync is disabled.
-2023-12-20 14:02:37.666 [info] Deleting non existing profile from backup /home/yusuf/.config/Code/User/sync/extensions
-2023-12-20 14:02:38.225 [info] Deleting non existing profile from backup /home/yusuf/.config/Code/User/sync/globalState
-2023-12-20 14:02:38.364 [info] Deleting non existing profile from backup /home/yusuf/.config/Code/User/sync/keybindings
-2023-12-20 14:02:38.495 [info] Deleting non existing profile from backup /home/yusuf/.config/Code/User/sync/settings
-2023-12-20 14:02:38.498 [info] Deleting non existing profile from backup /home/yusuf/.config/Code/User/sync/snippets
-2023-12-20 14:02:38.500 [info] Deleting non existing profile from backup /home/yusuf/.config/Code/User/sync/tasks

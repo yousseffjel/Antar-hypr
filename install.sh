@@ -77,7 +77,7 @@ if [[ $inst =~ ^[Yy]$ ]]; then
    app_pkgs2="polkit-kde-agent ffmpeg neovim viewnior pavucontrol ffmpegthumbnailer tumbler xdg-user-dirs spicetify-cli trash-cli timeshift grub-btrfs coreutils fuse python-pip trizen"
    app_pkgs3="emote syncthing unrar auto-cpufreq tlp network-manager-applet pacman-contrib python-pyamdgpuinfo parallel gparted brightnessctl kvantum neofetch visual-studio-code-bin vim spotify"
 
-#    yay -R --noconfirm swaylock waybar
+    yay -R --noconfirm wofi dolphin
 
     if ! yay -S --noconfirm $git_pkgs $hypr_pkgs $hypr_pkgs2 $font_pkgs $font_pkgs2 $app_pkgs $app_pkgs2 $app_pkgs3 2>&1 | tee -a $LOG; then
         print_error " Failed to install additional packages - please check the install.log \n"
@@ -98,24 +98,25 @@ fi
 read -n1 -rep "${CAT} Would you like to copy config files? (y,n)" CFG
 if [[ $CFG =~ ^[Yy]$ ]]; then
     printf " Make backup to old config....\n"
-#    mv $HOME/.config $/HOME/cfg-bak
+    sudo rm -rf $HOME/.config/hypr
+    sudo rm -rf $HOME/.config/kitty
+    sudo rm -rf $HOME/.config/dunst
     printf " Copying config files...\n"
-#    sudo mkdir -p $HOME/.config
-    ln -sf config/Code ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/dunst ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/gtk-3.0 ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/kitty ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/Kvantum ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/hypr ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/neofetch ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/nwg-look ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/qt5ct ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/rofi ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/swaylock ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/tmux ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/waybar ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/wlogout ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf config/xsettingsd ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/Code ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/dunst ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/gtk-3.0 ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/kitty ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/Kvantum ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/hypr ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/neofetch ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/nwg-look ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/qt5ct ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/rofi ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/swaylock ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/tmux ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/waybar ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/wlogout ~/.config/ 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/xsettingsd ~/.config/ 2>&1 | tee -a $LOG
 
 fi
 
@@ -166,6 +167,10 @@ if [[ ! -d $HOME/.vscode ]]; then
 fi
 
 sudo cp -R source/vscode/* $HOME/.vscode
+
+### Tmux Plugins ###
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 
 # pacman
