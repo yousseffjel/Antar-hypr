@@ -16,7 +16,7 @@ alias sz="source ~/.zshrc"
 alias sb="source ~/.bashrc"
 
 alias diff="diff --color=always"
-alias vim="nvim"
+alias vim="lvim"
 alias v="vim"
 alias rsync="rsync -rlpgto -h M --progress"
 alias grep="grep --color=always"
@@ -94,6 +94,9 @@ alias 644='chmod -R 644'
 alias 666='chmod -R 666'
 alias 755='chmod -R 755'
 alias 777='chmod -R 777'
+
+
+alias startdrive='rclone --vfs-cache-mode writes mount drive: ~/drive'
 
 
 

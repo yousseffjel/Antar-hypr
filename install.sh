@@ -69,7 +69,7 @@ if [[ $inst =~ ^[Nn]$ ]]; then
 
 if [[ $inst =~ ^[Yy]$ ]]; then
    git_pkgs="grimblast-git hyprpicker-git waybar-hyprland-git"
-   hypr_pkgs="hyprland wl-clipboard wf-recorder rofi-lbonn-wayland-git wlogout swaylock-effects dunst swaybg kitty thunar thunar-archive-plugin tmux zsync unzip tar sudo sed grep wget curl nodejs"
+   hypr_pkgs="hyprland wl-clipboard wf-recorder rofi-lbonn-wayland-git wlogout swaylock-effects dunst swaybg kitty thunar thunar-archive-plugin tmux zsync unzip tar sed grep wget curl nodejs"
    hypr_pkgs2="wlsunset floorp xdg-desktop-portal-hyprland slurp swappy cliphist swayidle xorg-xwayland xorg-xhost xdg-desktop-portal-gtk npm cargo tree lazygit binutils"
    font_pkgs="ttf-nerd-fonts-symbols-common otf-firamono-nerd inter-font otf-sora ttf-fantasque-nerd noto-fonts noto-fonts-emoji ttf-comfortaa ttf-font-awesome"
    font_pkgs2="ttf-jetbrains-mono-nerd ttf-icomoon-feather ttf-iosevka-nerd adobe-source-code-pro-fonts awesome-terminal-fonts ttf-joypixels ttf-opensans "
@@ -102,7 +102,7 @@ if [[ $CFG =~ ^[Yy]$ ]]; then
     sudo rm -rf $HOME/.config/kitty
     sudo rm -rf $HOME/.config/dunst
     printf " Copying config files...\n"
-    ln -sf $HOME/Antar-hypr/config/Code ~/.config/ 2>&1 | tee -a $LOG
+    cp -R config/Code ~/.config/ 2>&1 | tee -a $LOG
     ln -sf $HOME/Antar-hypr/config/dunst ~/.config/ 2>&1 | tee -a $LOG
     ln -sf $HOME/Antar-hypr/config/gtk-3.0 ~/.config/ 2>&1 | tee -a $LOG
     ln -sf $HOME/Antar-hypr/config/kitty ~/.config/ 2>&1 | tee -a $LOG
