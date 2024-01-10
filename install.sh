@@ -75,9 +75,9 @@ if [[ $inst =~ ^[Yy]$ ]]; then
    font_pkgs2="ttf-jetbrains-mono-nerd ttf-icomoon-feather ttf-iosevka-nerd adobe-source-code-pro-fonts awesome-terminal-fonts ttf-joypixels ttf-opensans "
    app_pkgs="nwg-look-bin qt5ct qt6ct qt5-wayland qt6-wayland htop jq gvfs ffmpegthumbs mpv playerctl pamixer opendoas rhythmbox qbittorrent bat freedownloadmanager figlet"
    app_pkgs2="polkit-kde-agent ffmpeg neovim viewnior pavucontrol ffmpegthumbnailer tumbler xdg-user-dirs spicetify-cli trash-cli timeshift grub-btrfs coreutils fuse python-pip trizen"
-   app_pkgs3="emote syncthing unrar auto-cpufreq tlp network-manager-applet pacman-contrib python-pyamdgpuinfo parallel gparted brightnessctl kvantum neofetch visual-studio-code-bin vim spotify"
+   app_pkgs3="emote syncthing unrar auto-cpufreq tlp network-manager-applet fzf pacman-contrib python-pyamdgpuinfo parallel gparted brightnessctl kvantum neofetch visual-studio-code-bin vim spotify"
 
-    yay -R --noconfirm wofi dolphin
+#    yay -R --noconfirm wofi dolphin
 
     if ! yay -S --noconfirm $git_pkgs $hypr_pkgs $hypr_pkgs2 $font_pkgs $font_pkgs2 $app_pkgs $app_pkgs2 $app_pkgs3 2>&1 | tee -a $LOG; then
         print_error " Failed to install additional packages - please check the install.log \n"
@@ -113,7 +113,9 @@ if [[ $CFG =~ ^[Yy]$ ]]; then
     ln -sf $HOME/Antar-hypr/config/qt5ct ~/.config/ 2>&1 | tee -a $LOG
     ln -sf $HOME/Antar-hypr/config/rofi ~/.config/ 2>&1 | tee -a $LOG
     ln -sf $HOME/Antar-hypr/config/swaylock ~/.config/ 2>&1 | tee -a $LOG
-    ln -sf $HOME/Antar-hypr/config/tmux ~/.config/ 2>&1 | tee -a $LOG
+    mkdir -p $HOME/.config/tmux
+    ln -sf $HOME/Antar-hypr/config/tmux/tmux.conf ~/.config/tmux/tmux.conf 2>&1 | tee -a $LOG
+    ln -sf $HOME/Antar-hypr/config/tmux/tmux.reset.conf ~/.config/tmux/tmux.reset.conf 2>&1 | tee -a $LOG
     ln -sf $HOME/Antar-hypr/config/waybar ~/.config/ 2>&1 | tee -a $LOG
     ln -sf $HOME/Antar-hypr/config/wlogout ~/.config/ 2>&1 | tee -a $LOG
     ln -sf $HOME/Antar-hypr/config/xsettingsd ~/.config/ 2>&1 | tee -a $LOG
@@ -159,7 +161,7 @@ if [[ ! -d $HOME/.themes ]]; then
 fi
 
 sudo cp -R source/themes/* /usr/share/themes
-sudo cp -R source/themesw/* $HOME/.themes
+sudo cp -R source/themes/* $HOME/.themes
 
 ### for vscode ###
 if [[ ! -d $HOME/.vscode ]]; then
@@ -172,6 +174,14 @@ sudo cp -R source/vscode/* $HOME/.vscode
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+### config doas ###
+sudo cp -R config/doas.conf /etc/
+
+### fix open kitty from thunar ###
+if [[ ! -d $HOME/.config/xfce4 ]]; then
+    sudo mkdir -p $HOME/.config/xfce4
+fi
+ln -sf $HOME/Antar-hypr/config/helpers.rc ~/.config/xfce4/helpers.rc 2>&1 | tee -a $LOG
 
 # pacman
 if [ -f /etc/pacman.conf ] && [ ! -f /etc/pacman.conf.t2.bkp ]
